@@ -4,11 +4,11 @@
 <head>
 				
 				<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 			
-				<style>
+<style>
 								
-								* {
+* {
   margin: 0;
   padding: 0;
 }
@@ -88,6 +88,7 @@ body {
 }
 
 #music-container {
+
   position: absolute;
   top: 0;
   left: 0;
@@ -131,11 +132,22 @@ body {
   }
 }
 
+
+.audio-trigger {
+width:100%; 
+height:100%; 
+position:absolute; 
+top:0;
+ left:0;
+}
+
+
 								
 				</style>
 				
 </head>
 <body>
+
 <div id="drag-container">
   <div id="spin-container">
     <!-- Add your images (or video) here -->
@@ -143,6 +155,7 @@ body {
     <img src="https://1.bp.blogspot.com/-_DTZv9_Z7L8/YIuhaIJRAlI/AAAAAAAAAVY/uiQRKWcf23cc8GjdR2l_A_HvkdaFT4G4ACLcBGAsYHQ/s2576/20210424_132813.jpg" alt="">
     <img src="https://1.bp.blogspot.com/-q7eO5yCdLbk/YIuh6YireHI/AAAAAAAAAVk/j3102EhbnBYqGIm8NPXkCqGM4PfbxtjZgCLcBGAsYHQ/w400-h185/20210424_132651.jpg" alt="">
     <img src="https://1.bp.blogspot.com/-N1jDsDW55hM/YIuoSj0lHmI/AAAAAAAAAVw/3wDJDis8d38KiBnVqc6aoY8-Ks3BzqerACLcBGAsYHQ/s320/20210424_132613.jpg" alt="">
+
     <img src="https://1.bp.blogspot.com/-E5ShBD40ltg/YIupDM6DYJI/AAAAAAAAAV4/1gRhZ1p6MvIBn4ZRSvoyXdIPw2YV5KFswCLcBGAsYHQ/s320/VideoCapture_20210430-122111.jpg" alt="">
     <img src="https://1.bp.blogspot.com/-KRhwU4rTdOE/YIusoPBN_II/AAAAAAAAAWA/tJhIOM5m4e8EP1km060zYQxg9tFwYL-uwCLcBGAsYHQ/s320/20210415_111032.jpg" alt="">
     
@@ -151,17 +164,13 @@ body {
       <img src="https://1.bp.blogspot.com/-KfYKG-CF6Ow/YIutp2LP-lI/AAAAAAAAAWI/H92yAFJyGiw06IhAdgXkDfUm39Q_PMvmgCLcBGAsYHQ/s320/20210424_132543.jpg" alt="">
     </a>
 
-    <img src="beautiful.gif" alt="">
-    
-
-
     <!-- Example add video  -->
-    <!--<video controls autoplay="autoplay" loop>
-      <source src="video.mp4" type="video/mp4">
-    </video>-->
+    <video controls autoplay="autoplay" loop>
+      <source src="https://player.vimeo.com/external/322244668.sd.mp4?s=338c48ac2dfcb1d4c0689968b5baf94eee6ca0c1&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+    </video>
 
     <!-- Text at center of ground -->
-    <p align="center">samson kiran</p>
+   <a href="https://www.google.com"> <p align="center""> samson kiran</p></a>
   </div>
   <div id="ground"></div>
 </div>
@@ -172,24 +181,27 @@ body {
 
 
 
+<audio id="myAudio" >
+   <source src="https://www.computerhope.com/jargon/m/example.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
-
-
-
+  <div class="audio-trigger" onclick="playAudio()"></div>
+ 
+</div>
 
 
 
 
 <script>
 				
-				// Author: Hoang Tran (https://www.facebook.com/profile.php?id=100004848287494)
-// Github verson (1 file .html): https://github.com/HoangTran0410/3DCarousel/blob/master/index.html
+		
 
 
 // You can change global variables here:
 var radius = 240; // how big of the radius
 var autoRotate = true; // auto rotate or not
-var rotateSpeed = -60; // unit: seconds/360 degrees
+var rotateSpeed = -15; // unit: seconds/360 degrees
 var imgWidth = 120; // width of images (unit: px)
 var imgHeight = 170; // height of images (unit: px)
 
@@ -201,8 +213,8 @@ var bgMusicControls = true; // Show UI music control
      NOTE:
        + imgWidth, imgHeight will work for video
        + if imgWidth, imgHeight too small, play/pause button in <video> will be hidden
-       + Music link are taken from: https://hoangtran0410.github.io/Visualyze-design-your-own-/?theme=HauMaster&playlist=1&song=1&background=28
-       + Custom from code in tiktok video  https://www.facebook.com/J2TEAM.ManhTuan/videos/1353367338135935/
+       + Music link are taken from
+       + Custom from code in tiktok video  
 */
 
 
@@ -260,7 +272,7 @@ if (autoRotate) {
 // add background music
 if (bgMusicURL) {
   document.getElementById('music-container').innerHTML += `
-<audio src="${bgMusicURL}" ${bgMusicControls? 'controls': ''} autoplay loop>    
+<audio src="${bgMusicURL}" ${bgMusicControls? 'autoplay': ''} autoplay loop>    
 <p>If you are reading this, it is because your browser does not support the audio element.</p>
 </audio>
 `;
@@ -312,7 +324,25 @@ document.onmousewheel = function(e) {
   init(1);
 };
 
+
+
+
+
+
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+    x.play(); 
+} 
+
+
 </script>
 
 </body>
 </html>
+
+
+
+
+
+
