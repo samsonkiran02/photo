@@ -1,11 +1,49 @@
+     <!--- copyright --->
+     <!--- samson kiran --->
+     <!--- samsonkiran02.github.io --->
+     <!--- https://samsonkiran02.github.io/home/Index.html --->
+     <!--- photo page --->
+     <!--- this website created in html, css, javascript, --->
+
+
+     <!-------------------------------------------------- html code starts -------------------------------------------------->                                                                                                                          
 <html>
-
-
+     <!-------------------- head tag starts -------------------->
 <head>
-				
-				<meta name="viewport" content="width=device-width, initial-scale=1">
 
-			
+<title>photo</title>
+
+     <!----- meta tag starts ----->
+<meta name="title" content="photo" />
+<meta name="description" content="The best website power by samson kiran" />                         
+<meta name="keywords" content="SAMSON KIRAN,samson kiran,Samson Kiran,Samson,Kiran,SK,sk,Sk,photo"/>
+<meta name="copyright" content="Copyright owner-samson kiran" />
+<meta name="author" content="Samson kiran" />
+<meta name = "revised" content = "samsonkiran02, 1/5/2021" />
+<meta name = "revised detail" content = "1/5/2021" />
+<meta http-equiv = "cookie" content = "userid = xyz; expires = Saturday, 1-May-21 20:59:59 GMT;" />
+<meta name="google-site-verification" content="MvFOEwgciG9lSC2ARQ88MaGGMKV1c6RzeLNzMqDIV8U" />
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<meta http-equiv = "refresh" content = "3000; url = https://samsonkiran02.github.io/home/Index.html" />
+<meta name="language" content="English,Tamil" />
+<meta property="og:image" content="https://i.ibb.co/m5NFvSJ/Samson-kiran.png" alt="samson kiran" />
+     <!----- meta tag ends ----->
+
+     <!----- link tag starts ----->
+<link rel = "icon" href ="https://i.ibb.co/tmLPy5n/Samson-kiran.png" type = "image/x-icon" alt="samson-kiran" />                                                                                                 
+<link rel="shortcut icon" href="samson-kiran.ico" type="image/x-icon" alt="samson-kiran.icon" />
+<link rel="stylesheet" type="text/css" href="#" />
+     <!----- link tag end ----->
+
+     <!----- script tag starts ----->
+<script src="#"></script>
+<script src="#"></script>
+     <!----- script tag end ----->
+     
+     <!-- style tag starts -->
 <style>
 								
 * {
@@ -141,16 +179,18 @@ top:0;
  left:0;
 }
 
-
-								
-				</style>
-				
-</head>
+</style>
+				 <!-- style tag end -->
+				</head>
+     <!-------------------- head tag end -------------------->
+     <!------------------------------ body tag starts ------------------------------>
 <body>
 
 <div id="drag-container">
+				
   <div id="spin-container">
-    <!-- Add your images (or video) here -->
+  				
+    <!-- Add your images (or video) here starts -->
     <img src="https://1.bp.blogspot.com/-KAbuB5OPvfE/YIuge1tuOII/AAAAAAAAAVQ/LyRXZvx7prUHT25K_vxAapiEqvFGrUdawCLcBGAsYHQ/s2608/20210424_133029.jpg" alt="">
     <img src="https://1.bp.blogspot.com/-_DTZv9_Z7L8/YIuhaIJRAlI/AAAAAAAAAVY/uiQRKWcf23cc8GjdR2l_A_HvkdaFT4G4ACLcBGAsYHQ/s2576/20210424_132813.jpg" alt="">
     <img src="https://1.bp.blogspot.com/-q7eO5yCdLbk/YIuh6YireHI/AAAAAAAAAVk/j3102EhbnBYqGIm8NPXkCqGM4PfbxtjZgCLcBGAsYHQ/w400-h185/20210424_132651.jpg" alt="">
@@ -164,24 +204,24 @@ top:0;
     </a>
 
     <!-- Example add video  -->
-   <!-- <video controls autoplay="autoplay" loop>
+    <!-- <video controls autoplay="autoplay" loop>
       <source src="https://player.vimeo.com/external/322244668.sd.mp4?s=338c48ac2dfcb1d4c0689968b5baf94eee6ca0c1&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
     </video> -->
 
 <img src="beautiful.gif" alt="">
+    <!-- Add your images (or video) here end -->
     
-    <!-- Text at center of ground -->
+    <!-- Text at center of ground starts -->
    <a href="https://www.google.com"> <p align="center""> samson kiran</p></a>
   </div>
   <div id="ground"></div>
 </div>
 
 <div id="music-container"></div>
+    <!-- Text at center of ground end -->
 
 
-
-
-
+    <!-- click to play music starts -->
 <audio id="myAudio" loop>
    <source src="beautiful.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
@@ -190,15 +230,11 @@ top:0;
   <div class="audio-trigger" onclick="playAudio()"></div>
  
 </div>
+    <!-- click to play music end -->
 
-
-
-
+     <!----- script tag starts ----->
 <script>
 				
-		
-
-
 // You can change global variables here:
 var radius = 240; // how big of the radius
 var autoRotate = true; // auto rotate or not
@@ -241,8 +277,8 @@ ground.style.height = radius * 3 + "px";
 function init(delayTime) {
   for (var i = 0; i < aEle.length; i++) {
     aEle[i].style.transform = "rotateY(" + (i * (360 / aEle.length)) + "deg) translateZ(" + radius + "px)";
-    aEle[i].style.transition = "transform 2s";
-    aEle[i].style.transitionDelay = delayTime || (aEle.length - i) / 3 + "s";
+    aEle[i].style.transition = "transform 5s";
+    aEle[i].style.transitionDelay = delayTime || (aEle.length - i) / 5 + "s";
   }
 }
 
@@ -326,9 +362,7 @@ document.onmousewheel = function(e) {
 };
 
 
-
-
-
+/* click to play music js starts */
 
 var x = document.getElementById("myAudio"); 
 
@@ -336,14 +370,15 @@ function playAudio() {
     x.play(); 
 } 
 
+/* click to play music js end */
 
 </script>
-
+     <!----- script tag starts ----->
 </body>
+     <!------------------------------ body tag end ------------------------------>
 </html>
+     <!-------------------------------------------------- html code end  -------------------------------------------------->
 
 
-
-
-
-
+     <!--- this coding is created by samson kiran --->
+     <!--- power by github --->
